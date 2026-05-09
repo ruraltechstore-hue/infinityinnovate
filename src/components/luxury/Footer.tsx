@@ -43,12 +43,13 @@ export const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="tel:+919876543210" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors">
-                <Phone size={14} className="text-primary" /> +91 98765 43210
+              <a href="tel:+919390168733" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors">
+                <Phone size={14} className="text-primary shrink-0" /> +91 93901 68733
               </a>
             </li>
-            <li className="flex items-center gap-2 text-muted-foreground text-sm">
-              <MapPin size={14} className="text-primary" /> Hyderabad, India
+            <li className="flex items-start gap-2 text-muted-foreground text-sm">
+              <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
+              <span>Sai Silicon Heights, 3-118, Megha Hills Rd, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India</span>
             </li>
           </ul>
         </div>
