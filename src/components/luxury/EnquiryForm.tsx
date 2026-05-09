@@ -22,6 +22,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
+  const [submitNotice, setSubmitNotice] = useState<string | null>(null);
 
   const update = (k: keyof FormState, v: string) => {
     setForm((f) => ({ ...f, [k]: v }));
@@ -38,6 +39,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
       return;
     }
     setSubmitting(true);
+    setSubmitNotice(null);
     const res = await submitRegistration(parsed.data as unknown as { name: string; phone: string; email: string; requirements: string });
     setSubmitting(false);
     if (res.ok) {
@@ -45,6 +47,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
       setForm(initial);
       toast({ title: "Enquiry received", description: "Our team will reach out to you shortly." });
     } else {
+      setSubmitNotice(res.error);
       toast({ title: "Could not submit", description: res.error, variant: "destructive" });
     }
   };
