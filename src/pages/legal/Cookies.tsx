@@ -3,69 +3,121 @@ import { LegalLayout } from "./LegalLayout";
 const Cookies = () => (
   <LegalLayout
     title="Cookie Policy"
-    subtitle="This policy explains how InfinityInnovate Properties uses cookies and similar tracking technologies on our website to deliver a fast, secure and personalised experience."
+    subtitle="How InfinityInnovate Properties uses cookies across our website to help you discover, shortlist and enquire about premium residential and commercial projects across India."
   >
-    <h2>1. What Are Cookies?</h2>
+    <h2>1. About This Policy</h2>
     <p>
-      Cookies are small text files placed on your device when you visit a website. They allow the
-      website to recognise your browser, remember your preferences, and provide functionality such as
-      keeping you signed in, remembering your shortlist of properties, and measuring how our pages
-      perform.
+      This Cookie Policy applies specifically to the InfinityInnovate Properties website
+      (<a href="/" className="text-primary hover:underline">infinityinnovative.com</a>) and explains
+      how we use cookies and similar technologies when you browse our project listings, request a
+      site visit, download a brochure, or submit an enquiry through our contact forms. It should be
+      read together with our Privacy Policy.
     </p>
 
-    <h2>2. Categories of Cookies We Use</h2>
-    <h3>Strictly Necessary Cookies</h3>
+    <h2>2. Why We Use Cookies on a Real-Estate Website</h2>
     <p>
-      Required for the basic operation of the website, including page navigation, security, and form
-      submission. The website cannot function correctly without these cookies.
-    </p>
-    <h3>Performance & Analytics Cookies</h3>
-    <p>
-      Help us understand how visitors discover and engage with our project listings. Tools such as
-      Google Analytics aggregate anonymised data on page views, session duration, traffic sources and
-      conversion paths so we can improve the relevance of our content.
-    </p>
-    <h3>Functional Cookies</h3>
-    <p>
-      Remember choices you make, such as your preferred city (Hyderabad, Bengaluru, Pune), language,
-      and previously viewed projects, so we can present a more relevant experience on your next visit.
-    </p>
-    <h3>Marketing Cookies</h3>
-    <p>
-      Set by our advertising partners to build a profile of your interests and show you relevant
-      InfinityInnovate Properties campaigns on other websites and social platforms. These cookies are
-      enabled only with your explicit consent.
+      Buying or investing in a home is a considered decision that often involves multiple visits to
+      our website across several days. We use cookies to make that journey smoother and more
+      personalised for buyers, NRI investors, channel partners and corporate clients exploring our
+      projects in Hyderabad, Bengaluru, Pune and other Indian cities.
     </p>
 
-    <h2>3. Third-Party Cookies</h2>
+    <h2>3. How InfinityInnovate Properties Uses Cookies</h2>
+
+    <h3>Remembering Your Enquiry &amp; Contact Details</h3>
     <p>
-      Certain pages may include embedded content from third parties such as Google Maps, YouTube and
-      virtual-tour providers. These third parties may set their own cookies, which are governed by
-      their respective privacy policies.
+      When you start filling out an enquiry form for a project such as Infinity Heights or Urban
+      Vista, cookies help us temporarily retain information like your name, phone number, email and
+      preferred configuration (2 BHK, 3 BHK, villa, commercial space) so you do not have to re-enter
+      these details if you navigate to another project page or return later in the same session.
     </p>
 
-    <h2>4. Managing Your Preferences</h2>
+    <h3>Improving Your Property Browsing Experience</h3>
     <p>
-      You can manage or disable cookies at any time through your browser settings. Most browsers allow
-      you to refuse cookies, delete existing cookies, or be notified before a new cookie is stored.
-      Please note that disabling certain cookies may affect the functionality of the website,
-      including our enquiry forms and shortlisting features.
+      Cookies remember the projects you have viewed, your shortlisted units, preferred city,
+      budget range and configuration filters. This allows us to surface the most relevant
+      InfinityInnovate Properties developments on your next visit and reduce the time spent
+      re-applying filters.
     </p>
 
-    <h2>5. Updates to This Policy</h2>
+    <h3>Understanding Which Project Pages You Visit</h3>
     <p>
-      We may update this Cookie Policy from time to time to reflect changes in technology, regulation,
-      or our business practices. The latest version will always be available on this page with the
-      revised "Last updated" date.
+      We use analytics cookies (including Google Analytics) to understand which project pages,
+      floor plans, virtual tours and amenity sections receive the most engagement. These insights
+      help our sales and marketing teams refine project information, publish clearer pricing and
+      availability updates, and prioritise high-demand inventory.
     </p>
 
-    <h2>6. Contact</h2>
+    <h3>Improving Website Performance &amp; Navigation</h3>
     <p>
-      For any questions regarding our use of cookies, please contact us at{" "}
+      Performance cookies help us measure page load times for high-resolution project galleries,
+      optimise image delivery for mobile users on Indian networks, and detect any broken navigation
+      paths between the Home, Projects, About and Contact sections of our website.
+    </p>
+
+    <h3>Securing Your Interactions</h3>
+    <p>
+      Strictly necessary cookies protect form submissions against spam and automated abuse, and
+      help us maintain the integrity of communications between you and our relationship managers.
+    </p>
+
+    <h3>Marketing &amp; Re-engagement</h3>
+    <p>
+      With your consent, marketing cookies allow us to share relevant updates about new project
+      launches, RERA-approved inventory, festive offers and NRI-focused campaigns through
+      platforms such as Google Ads, Meta and YouTube. You will only see these communications if
+      you have shown interest in similar projects on our website.
+    </p>
+
+    <h2>4. Categories of Cookies We Use</h2>
+    <ul>
+      <li>
+        <strong>Strictly Necessary:</strong> Enable core functions such as enquiry submission,
+        brochure downloads and site-visit booking.
+      </li>
+      <li>
+        <strong>Functional:</strong> Remember preferences like city, configuration, budget and
+        recently viewed projects.
+      </li>
+      <li>
+        <strong>Analytics:</strong> Measure traffic, popular projects and user journeys to improve
+        the website.
+      </li>
+      <li>
+        <strong>Marketing:</strong> Deliver relevant project advertising and measure campaign
+        performance.
+      </li>
+    </ul>
+
+    <h2>5. Third-Party Services</h2>
+    <p>
+      Some pages embed services from trusted partners — Google Maps for project locations, YouTube
+      for walkthrough videos, and virtual tour providers for 3D unit experiences. These services
+      may set their own cookies, governed by their respective privacy and cookie policies.
+    </p>
+
+    <h2>6. Managing Your Preferences</h2>
+    <p>
+      You can accept, reject or clear cookies through your browser settings at any time. Please
+      note that disabling functional cookies may affect features such as saved shortlists,
+      pre-filled enquiry forms and personalised project recommendations on the InfinityInnovate
+      Properties website.
+    </p>
+
+    <h2>7. Updates to This Policy</h2>
+    <p>
+      As our project portfolio grows and digital experiences evolve, we may revise this policy to
+      reflect new tools or regulatory requirements under the Digital Personal Data Protection Act,
+      2023. The most current version will always be available on this page.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      For any questions about how InfinityInnovate Properties uses cookies, please write to{" "}
       <a href="mailto:privacy@infinityinnovative.com" className="text-primary hover:underline">
         privacy@infinityinnovative.com
-      </a>
-      .
+      </a>{" "}
+      or reach our corporate office in Hyderabad.
     </p>
   </LegalLayout>
 );
