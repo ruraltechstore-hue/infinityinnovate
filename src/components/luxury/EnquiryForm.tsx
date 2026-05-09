@@ -38,7 +38,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
       return;
     }
     setSubmitting(true);
-    const res = await submitRegistration(parsed.data as FormState);
+    const res = await submitRegistration(parsed.data as unknown as { name: string; phone: string; email: string; requirements: string });
     setSubmitting(false);
     if (res.ok) {
       setDone(true);
