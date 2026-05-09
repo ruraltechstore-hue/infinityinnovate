@@ -59,11 +59,11 @@ export const Footer = () => (
         </div>
 
         <div>
-          <p className="text-primary font-mono text-xs tracking-widest uppercase mb-4">Legal</p>
+          <Link to="/legal" className="text-primary font-mono text-xs tracking-widest uppercase mb-4 inline-block hover:opacity-80 transition-opacity">Legal</Link>
           <ul className="space-y-3">
-            <li><a href="#" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Cookies</a></li>
-            <li><a href="#" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Terms</a></li>
+            <li><Link to="/privacy-policy" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/cookies" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Cookies</Link></li>
+            <li><Link to="/terms" className="text-muted-foreground text-sm hover:text-foreground transition-colors">Terms</Link></li>
           </ul>
         </div>
       </div>
