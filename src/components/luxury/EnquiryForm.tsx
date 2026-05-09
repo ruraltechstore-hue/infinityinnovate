@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { z } from "zod";
 import { CheckCircle, AlertCircle, Send, User, Phone, Mail, MessageSquare } from "lucide-react";
-import { submitRegistration, isSupabaseConfigured } from "@/lib/supabase";
+import { submitRegistration } from "@/lib/supabase";
 import { useToast } from "@/hooks/use-toast";
 
 const schema = z.object({
@@ -22,6 +22,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
   const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
+  const [submitNotice, setSubmitNotice] = useState<string | null>(null);
 
   const update = (k: keyof FormState, v: string) => {
     setForm((f) => ({ ...f, [k]: v }));
@@ -38,6 +39,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
       return;
     }
     setSubmitting(true);
+    setSubmitNotice(null);
     const res = await submitRegistration(parsed.data as unknown as { name: string; phone: string; email: string; requirements: string });
     setSubmitting(false);
     if (res.ok) {
@@ -45,6 +47,7 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
       setForm(initial);
       toast({ title: "Enquiry received", description: "Our team will reach out to you shortly." });
     } else {
+      setSubmitNotice(res.error);
       toast({ title: "Could not submit", description: res.error, variant: "destructive" });
     }
   };
@@ -100,12 +103,12 @@ export const EnquiryForm = ({ variant = "light" }: { variant?: "light" | "dark" 
           : "glass-card"
       }`}
     >
-      {!isSupabaseConfigured && (
+      {submitNotice && (
         <div className={`flex gap-2 items-start text-xs rounded-lg p-3 ${
           dark ? "bg-amber-500/10 text-amber-200 border border-amber-400/20" : "bg-amber-50 text-amber-800 border border-amber-200"
         }`}>
           <AlertCircle size={14} className="mt-0.5 flex-shrink-0" />
-          <span>Backend not connected yet. Form validation works, but submissions won't be stored until Supabase credentials are added.</span>
+          <span>{submitNotice}</span>
         </div>
       )}
 
