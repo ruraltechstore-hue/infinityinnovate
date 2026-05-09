@@ -7,10 +7,10 @@ export const Hero = () => (
       <img
         src={heroImg}
         className="h-full w-full object-cover"
-        alt="Modern luxury architecture at golden hour"
+        alt="Premium Indian luxury residential tower at golden hour"
         loading="eager"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/50 via-secondary/70 to-secondary/95" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/40 via-secondary/70 to-secondary/95" />
     </div>
 
     <div className="relative z-10 max-w-7xl w-full mx-auto px-6 md:px-12 pb-20 md:pb-28">
@@ -19,30 +19,29 @@ export const Hero = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
-        <span className="inline-block px-4 py-1.5 mb-6 border border-primary/30 rounded-full text-primary-foreground/80 text-xs font-mono tracking-widest uppercase bg-primary/20 backdrop-blur-sm">
-          Est. 2024 • Excellence in Equity
+        <span className="inline-block px-4 py-1.5 mb-6 border border-primary/30 rounded-full text-primary-foreground/90 text-xs font-mono tracking-widest uppercase bg-primary/20 backdrop-blur-sm">
+          RERA Approved • Trusted Across India
         </span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[0.9] mb-8 text-white">
-          REDEFINING <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-primary">REAL ESTATE</span>
+          Building Spaces <br />
+          for <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-primary">India's</span>
           <br />
-          <span className="text-primary">EXCELLENCE</span>
+          <span className="text-primary">Future</span>
         </h1>
 
         <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
-          <p className="max-w-md text-lg text-white/70 leading-relaxed">
-            Smart investments. Premium properties. Trusted partnerships.
-            We bridge the gap between architectural vision and capital growth.
+          <p className="max-w-md text-lg text-white/75 leading-relaxed">
+            Premium apartments, villas, and commercial spaces crafted for modern Indian living.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap">
             <a
               href="#properties"
               className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-lg transition-all duration-300 hover:brightness-110 active:scale-95 shadow-lg shadow-primary/25"
             >
-              Explore Properties
+              Explore Projects
             </a>
             <a
-              href="#cta"
+              href="#enquire"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300"
             >
               Contact Us

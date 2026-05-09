@@ -1,34 +1,40 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { ConsultantModal } from "./ConsultantModal";
+import { Mail } from "lucide-react";
+import { EnquiryForm } from "./EnquiryForm";
 
-export const CTASection = () => {
-  const [open, setOpen] = useState(false);
+export const CTASection = () => (
+  <section id="enquire" className="section-padding bg-muted/40">
+    <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <p className="text-primary font-mono text-xs tracking-widest uppercase mb-4">Enquire Now</p>
+        <h2 className="text-4xl md:text-5xl font-display font-semibold tracking-tight mb-6 text-foreground">
+          Find a Home That <br /> <span className="text-primary">Truly Fits You</span>
+        </h2>
+        <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8 max-w-md">
+          Share a few details and our property consultant will get in touch with curated
+          options matching your requirements.
+        </p>
+        <a
+          href="mailto:support@infinityinnovative.com"
+          className="inline-flex items-center gap-2 text-foreground hover:text-primary transition-colors text-sm"
+        >
+          <Mail size={16} className="text-primary" /> support@infinityinnovative.com
+        </a>
+      </motion.div>
 
-  return (
-    <section id="cta" className="section-padding">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className="max-w-4xl mx-auto text-center rounded-2xl p-12 md:p-20 bg-gradient-to-br from-secondary to-secondary/90 shadow-xl"
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        <h2 className="text-4xl md:text-5xl font-display font-semibold tracking-tight mb-6 text-white">
-          Find Your Dream <br />Property <span className="text-primary">Today</span>
-        </h2>
-        <p className="text-white/60 text-lg leading-relaxed max-w-xl mx-auto mb-10">
-          Whether you're acquiring your first investment property or expanding a global portfolio,
-          our team is ready to deliver results.
-        </p>
-        <button
-          onClick={() => setOpen(true)}
-          className="inline-block px-10 py-4 bg-primary text-primary-foreground font-bold rounded-lg transition-all duration-300 hover:brightness-110 active:scale-95 text-lg shadow-lg shadow-primary/25"
-        >
-          Get Started
-        </button>
+        <EnquiryForm />
       </motion.div>
-      <ConsultantModal open={open} onOpenChange={setOpen} />
-    </section>
-  );
-};
+    </div>
+  </section>
+);
