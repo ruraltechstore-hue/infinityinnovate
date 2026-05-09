@@ -7,21 +7,53 @@ import { EnquiryForm } from "@/components/luxury/EnquiryForm";
 const cubicEase: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 const contactCards = [
-  { icon: Phone, title: "Call Us", value: "+91 98765 43210", href: "tel:+919876543210" },
-  { icon: Mail, title: "Email Us", value: "support@infinityinnovative.com", href: "mailto:support@infinityinnovative.com" },
-  { icon: MapPin, title: "Visit Office", value: "Hyderabad, Telangana, India", href: undefined },
+  { icon: Phone, title: "Call Us", value: "+91 98765 43210", href: "tel:+919390168733" },
+  {
+    icon: Mail,
+    title: "Email Us",
+    value: "support@infinityinnovative.com",
+    href: "mailto:support@infinityinnovative.com",
+  },
+  {
+    icon: MapPin,
+    title: "Visit Office",
+    value:
+      "Sai Silicon Heights, 3-118, Megha Hills Rd, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India",
+    href: undefined,
+  },
 ];
 
 const whyContact = [
-  { icon: ShieldCheck, title: "Verified Project Information", desc: "Receive RERA numbers, sanction plans, carpet area details and current pricing — direct from the developer." },
-  { icon: Users2, title: "Dedicated Relationship Manager", desc: "A single point of contact for site visits, brochures, payment plans and home-loan coordination." },
-  { icon: Building2, title: "Site Visits On Your Schedule", desc: "Weekday or weekend, virtual or in-person — we make it easy for you to experience our projects firsthand." },
+  {
+    icon: ShieldCheck,
+    title: "Verified Project Information",
+    desc: "Receive RERA numbers, sanction plans, carpet area details and current pricing — direct from the developer.",
+  },
+  {
+    icon: Users2,
+    title: "Dedicated Relationship Manager",
+    desc: "A single point of contact for site visits, brochures, payment plans and home-loan coordination.",
+  },
+  {
+    icon: Building2,
+    title: "Site Visits On Your Schedule",
+    desc: "Weekday or weekend, virtual or in-person — we make it easy for you to experience our projects firsthand.",
+  },
 ];
 
 const audienceNotes = [
-  { tag: "For Investors", desc: "Detailed unit-level appreciation history, rental benchmark data and exit-strategy guidance for HNI and NRI buyers." },
-  { tag: "For Homebuyers", desc: "End-to-end support from shortlisting and configuration selection to home-loan tie-ups and registration." },
-  { tag: "For Families", desc: "Personalised walkthroughs focused on schooling, safety, community amenities and long-term liveability." },
+  {
+    tag: "For Investors",
+    desc: "Detailed unit-level appreciation history, rental benchmark data and exit-strategy guidance for HNI and NRI buyers.",
+  },
+  {
+    tag: "For Homebuyers",
+    desc: "End-to-end support from shortlisting and configuration selection to home-loan tie-ups and registration.",
+  },
+  {
+    tag: "For Families",
+    desc: "Personalised walkthroughs focused on schooling, safety, community amenities and long-term liveability.",
+  },
 ];
 
 const Contact = () => (
@@ -31,15 +63,30 @@ const Contact = () => (
     {/* Banner */}
     <section className="pt-36 pb-10 px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: cubicEase }} className="text-primary font-mono text-xs tracking-widest uppercase mb-4">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: cubicEase }}
+          className="text-primary font-mono text-xs tracking-widest uppercase mb-4"
+        >
           Get In Touch
         </motion.p>
-        <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: cubicEase }} className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white mb-5">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: cubicEase }}
+          className="text-4xl md:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white mb-5"
+        >
           We'd Love to Hear From You
         </motion.h1>
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.12, ease: cubicEase }} className="text-[#94A3B8] text-base md:text-lg max-w-xl mx-auto leading-relaxed">
-          Whether you're shortlisting your next home, exploring an investment, or simply want
-          honest advice about Hyderabad's property market — our team is here to help.
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.12, ease: cubicEase }}
+          className="text-[#94A3B8] text-base md:text-lg max-w-xl mx-auto leading-relaxed"
+        >
+          Whether you're shortlisting your next home, exploring an investment, or simply want honest advice about
+          Hyderabad's property market — our team is here to help.
         </motion.p>
       </div>
     </section>
@@ -64,7 +111,13 @@ const Contact = () => (
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25 + i * 0.1, duration: 0.5, ease: cubicEase }}
             >
-              {c.href ? <a href={c.href} className="block">{inner}</a> : inner}
+              {c.href ? (
+                <a href={c.href} className="block">
+                  {inner}
+                </a>
+              ) : (
+                inner
+              )}
             </motion.div>
           );
         })}
@@ -91,8 +144,8 @@ const Contact = () => (
           Honest Answers, Direct From the Developer
         </h2>
         <p className="text-[#94A3B8] text-base leading-relaxed">
-          We believe property decisions deserve clarity. When you reach out, you speak with
-          our in-house team — never a routed call centre.
+          We believe property decisions deserve clarity. When you reach out, you speak with our in-house team — never a
+          routed call centre.
         </p>
       </div>
       <div className="grid sm:grid-cols-3 gap-5">
@@ -132,10 +185,9 @@ const Contact = () => (
             We respond within 24 business hours
           </h3>
           <p className="text-[#94A3B8] leading-relaxed">
-            Every enquiry is reviewed by a senior consultant and answered with project-specific
-            information, current availability and the next-step that's right for you. For urgent
-            site-visit requests, simply mention your preferred date in the enquiry form and we'll
-            confirm the slot the same day.
+            Every enquiry is reviewed by a senior consultant and answered with project-specific information, current
+            availability and the next-step that's right for you. For urgent site-visit requests, simply mention your
+            preferred date in the enquiry form and we'll confirm the slot the same day.
           </p>
         </div>
       </motion.div>
