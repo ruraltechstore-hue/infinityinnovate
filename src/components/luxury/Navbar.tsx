@@ -5,10 +5,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Properties", href: "#properties" },
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "About Us", href: "#about" },
+  { label: "Projects", href: "#properties" },
 ];
 
 const InfinityLogo = () => (
@@ -47,6 +45,15 @@ export const Navbar = () => {
     el?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const goEnquire = () => {
+    setMobileOpen(false);
+    if (isHome) {
+      document.querySelector("#enquire")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/#enquire";
+    }
+  };
+
   return (
     <>
       <motion.nav
@@ -60,8 +67,8 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
           <button onClick={() => scrollTo("#home")} className="flex items-center gap-3">
             <InfinityLogo />
-            <span className="font-display text-lg font-bold tracking-tight text-foreground">
-              Infinity<span className="text-primary">.</span>
+            <span className="font-display text-base md:text-lg font-bold tracking-tight text-foreground">
+              InfinityInnovate<span className="text-primary"> Properties</span>
             </span>
           </button>
 
@@ -82,10 +89,10 @@ export const Navbar = () => {
               Contact
             </Link>
             <button
-              onClick={() => scrollTo("#cta")}
+              onClick={goEnquire}
               className="px-6 py-2.5 bg-primary text-primary-foreground text-sm font-semibold rounded-lg transition-all duration-300 hover:brightness-110 active:scale-95 shadow-md shadow-primary/20"
             >
-              Get Started
+              Enquire Now
             </button>
           </div>
 
@@ -125,10 +132,10 @@ export const Navbar = () => {
                 Contact
               </Link>
               <button
-                onClick={() => scrollTo("#cta")}
+                onClick={goEnquire}
                 className="mt-4 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg text-lg shadow-md shadow-primary/20"
               >
-                Get Started
+                Enquire Now
               </button>
             </div>
           </motion.div>
