@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroImg from "@/assets/hero-luxury.jpg";
 
 export const Hero = () => (
@@ -34,18 +35,18 @@ export const Hero = () => (
             Premium apartments, villas, and commercial spaces crafted for modern Indian living.
           </p>
           <div className="flex gap-4 flex-wrap">
-            <a
-              href="#properties"
+            <Link
+              to="/projects"
               className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-lg transition-all duration-300 hover:brightness-110 active:scale-95 shadow-lg shadow-primary/25"
             >
               Explore Projects
-            </a>
-            <a
-              href="#enquire"
+            </Link>
+            <Link
+              to="/contact"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all duration-300"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>

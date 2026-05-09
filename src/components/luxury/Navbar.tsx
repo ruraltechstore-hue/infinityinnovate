@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Projects", href: "#properties" },
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about" },
+  { label: "Projects", to: "/projects" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const InfinityLogo = () => (
@@ -27,6 +28,7 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isHome = location.pathname === "/";
 
   useEffect(() => {
@@ -35,22 +37,12 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (href: string) => {
-    setMobileOpen(false);
-    if (!isHome && href.startsWith("#")) {
-      window.location.href = "/" + href;
-      return;
-    }
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const goEnquire = () => {
     setMobileOpen(false);
     if (isHome) {
       document.querySelector("#enquire")?.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.location.href = "/#enquire";
+      navigate("/contact");
     }
   };
 
@@ -65,29 +57,28 @@ export const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
-          <button onClick={() => scrollTo("#home")} className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <InfinityLogo />
             <span className="font-display text-base md:text-lg font-bold tracking-tight text-foreground">
               InfinityInnovate<span className="text-primary"> Properties</span>
             </span>
-          </button>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+              <NavLink
+                key={link.to}
+                to={link.to}
+                end={link.to === "/"}
+                className={({ isActive }) =>
+                  `text-sm transition-colors duration-300 ${
+                    isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                  }`
+                }
               >
                 {link.label}
-              </button>
+              </NavLink>
             ))}
-            <Link
-              to="/contact"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Contact
-            </Link>
             <button
               onClick={goEnquire}
               className="px-6 py-2.5 bg-primary text-primary-foreground text-sm font-semibold rounded-lg transition-all duration-300 hover:brightness-110 active:scale-95 shadow-md shadow-primary/20"
@@ -116,21 +107,15 @@ export const Navbar = () => {
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (
-                <button
-                  key={link.href}
-                  onClick={() => scrollTo(link.href)}
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
                   className="text-2xl font-display font-semibold text-foreground text-left"
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
-              <Link
-                to="/contact"
-                onClick={() => setMobileOpen(false)}
-                className="text-2xl font-display font-semibold text-foreground text-left"
-              >
-                Contact
-              </Link>
               <button
                 onClick={goEnquire}
                 className="mt-4 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg text-lg shadow-md shadow-primary/20"
