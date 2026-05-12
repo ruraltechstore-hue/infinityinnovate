@@ -18,7 +18,7 @@ const contactCards = [
     icon: MapPin,
     title: "Visit Office",
     value:
-      "Sai Silicon Heights, 3-118, Megha Hills Rd, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India",
+      "Sai Silicon Heights, 3-118, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India",
     href: undefined,
   },
 ];

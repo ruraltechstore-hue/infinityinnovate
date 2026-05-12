@@ -49,7 +49,7 @@ export const Footer = () => (
             </li>
             <li className="flex items-start gap-2 text-muted-foreground text-sm">
               <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
-              <span>Sai Silicon Heights, 3-118, Megha Hills Rd, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India</span>
+              <span>Sai Silicon Heights, 3-118, Ayyappa Society, Mega Hills, Madhapur, Hyderabad, Telangana 500081, India</span>
             </li>
           </ul>
         </div>

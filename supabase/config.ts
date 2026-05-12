@@ -6,8 +6,9 @@
  *  2. Create a `registrations` table with the SQL below.
  *  3. Add these env vars to a `.env.local` at the project root:
  *
- *     VITE_SUPABASE_URL=https://YOUR-PROJECT.supabase.co
- *     VITE_SUPABASE_ANON_KEY=YOUR-PUBLIC-ANON-KEY
+ *     VITE_SUPABASE_URL=https://ragdziqoxhqaqdcabhyt.supabase.co
+ *     VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJhZ2R6aXFveGhxYXFkY2FiaHl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzMDQ5MDAsImV4cCI6MjA5Mzg4MDkwMH0.l-PawL11iGLw1lW4b2NF0wN6OQj4OTb1RirGRLE883g
+
  *
  * SQL:
  *   create table public.registrations (
