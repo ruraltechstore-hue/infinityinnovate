@@ -3,11 +3,11 @@ import { LegalLayout } from "./LegalLayout";
 const PrivacyPolicy = () => (
   <LegalLayout
     title="Privacy Policy"
-    subtitle="Your privacy is fundamental to the trust you place in InfinityInnovate Properties. This policy explains how we collect, use, store and protect your personal information."
+    subtitle="Your privacy is fundamental to the trust you place in InfinityInnovative Properties. This policy explains how we collect, use, store and protect your personal information."
   >
     <h2>1. Introduction</h2>
     <p>
-      InfinityInnovate Properties Pvt. Ltd. ("InfinityInnovate", "we", "us", or "our") respects the
+      InfinityInnovative Properties Pvt. Ltd. ("InfinityInnovative", "we", "us", or "our") respects the
       privacy of every visitor, prospective buyer, investor, channel partner, and customer who
       interacts with our website, sales offices, project sites and marketing channels. This Privacy
       Policy is published in accordance with the Information Technology Act, 2000, the Information
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => (
 
     <h2>8. Contact Us</h2>
     <p>
-      Data Protection Officer, InfinityInnovate Properties Pvt. Ltd., Hyderabad, India.<br />
+      Data Protection Officer, InfinityInnovative Properties Pvt. Ltd., Hyderabad, India.<br />
       Email:{" "}
       <a href="mailto:privacy@infinityinnovative.com" className="text-primary hover:underline">
         privacy@infinityinnovative.com

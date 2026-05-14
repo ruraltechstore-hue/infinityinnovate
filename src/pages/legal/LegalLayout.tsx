@@ -16,7 +16,7 @@ export const LegalLayout = ({ title, subtitle, updated = "January 2026", childre
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <header className="mb-12 border-b border-border pb-8">
           <p className="text-primary font-mono text-xs tracking-widest uppercase mb-3">
-            InfinityInnovate Properties
+            InfinityInnovative Properties
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
             {title}

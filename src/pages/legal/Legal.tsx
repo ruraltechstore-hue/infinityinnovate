@@ -10,7 +10,7 @@ const sections = [
   {
     to: "/cookies",
     title: "Cookie Policy",
-    desc: "Details of the cookies and similar technologies used on the InfinityInnovate Properties website to enhance your experience.",
+    desc: "Details of the cookies and similar technologies used on the InfinityInnovative Properties website to enhance your experience.",
   },
   {
     to: "/terms",
@@ -22,11 +22,11 @@ const sections = [
 const Legal = () => (
   <LegalLayout
     title="Legal Information"
-    subtitle="Transparency is the foundation of trust. Below you will find the legal documents that govern your interaction with InfinityInnovate Properties — across our website, marketing material, project enquiries and on-site engagements."
+    subtitle="Transparency is the foundation of trust. Below you will find the legal documents that govern your interaction with InfinityInnovative Properties — across our website, marketing material, project enquiries and on-site engagements."
   >
     <h2>Our Legal Commitment</h2>
     <p>
-      InfinityInnovate Properties Pvt. Ltd. is a RERA-registered real estate developer headquartered in
+      InfinityInnovative Properties Pvt. Ltd. is a RERA-registered real estate developer headquartered in
       Hyderabad, India. We are committed to operating in full compliance with the Real Estate (Regulation
       and Development) Act, 2016 (RERA), the Information Technology Act, 2000, the Digital Personal Data
       Protection Act, 2023 (DPDP Act), and all other applicable Central and State legislations governing
@@ -52,7 +52,7 @@ const Legal = () => (
 
     <h2>RERA & Regulatory Disclosures</h2>
     <p>
-      All projects marketed by InfinityInnovate Properties are registered with the relevant State Real
+      All projects marketed by InfinityInnovative Properties are registered with the relevant State Real
       Estate Regulatory Authority. RERA registration numbers, approved sanction plans, carpet area
       details, and project completion timelines are disclosed on the respective project pages and in
       our official sales offices. Prospective buyers are encouraged to verify these details directly on

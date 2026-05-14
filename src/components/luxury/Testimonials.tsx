@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Alexandra Chen",
     role: "Private Investor",
-    text: "InfinityInnovativeProperties delivered a seamless acquisition experience. Their market intelligence is unmatched — we closed on a $12M portfolio in under 60 days.",
+    text: "InfinityInnovative delivered a seamless acquisition experience. Their market intelligence is unmatched — we closed on a $12M portfolio in under 60 days.",
   },
   {
     name: "Marcus Whitfield",

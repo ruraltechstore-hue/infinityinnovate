@@ -60,7 +60,7 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-3">
             <InfinityLogo />
             <span className="font-display text-base md:text-lg font-bold tracking-tight text-foreground">
-              InfinityInnovate<span className="text-primary"> Properties</span>
+              Infinity<span className="text-primary">Innovative</span>
             </span>
           </Link>
 

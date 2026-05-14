@@ -5,7 +5,7 @@ const items = [
   {
     icon: MapPinned,
     title: "Prime Locations",
-    desc: "Every Infinity address is selected after deep due diligence — proximity to tech corridors, schools, healthcare and arterial roads ensures lasting demand.",
+    desc: "Every InfinityInnovative address is selected after deep due diligence — proximity to tech corridors, schools, healthcare and arterial roads ensures lasting demand.",
   },
   {
     icon: TrendingUp,
@@ -55,7 +55,7 @@ export const WhyInvest = () => (
           transition={{ duration: 0.6, delay: 0.1, ease: cubicEase }}
           className="text-muted-foreground text-base md:text-lg leading-relaxed"
         >
-          Beyond beautiful homes, we build long-term value. Every Infinity project is engineered
+          Beyond beautiful homes, we build long-term value. Every InfinityInnovative project is engineered
           to deliver enduring returns, lifestyle quality and the peace of mind that comes with
           a developer that has earned its reputation, one handover at a time.
         </motion.p>

@@ -14,7 +14,7 @@ export const Footer = () => (
       <div className="grid md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
           <p className="font-display text-lg font-bold tracking-tight mb-4 text-foreground">
-            InfinityInnovate<span className="text-primary"> Properties</span>
+            Infinity<span className="text-primary">Innovative</span>
           </p>
           <p className="text-muted-foreground text-sm leading-relaxed">
             Premium apartments, villas and commercial spaces crafted for modern Indian living.
@@ -66,7 +66,7 @@ export const Footer = () => (
 
       <div className="mt-16 pt-8 border-t border-border text-center">
         <p className="text-muted-foreground text-xs">
-          © {new Date().getFullYear()} InfinityInnovate Properties. All rights reserved.
+          © {new Date().getFullYear()} InfinityInnovative Properties. All rights reserved.
         </p>
       </div>
     </div>

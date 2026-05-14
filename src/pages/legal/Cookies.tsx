@@ -3,11 +3,11 @@ import { LegalLayout } from "./LegalLayout";
 const Cookies = () => (
   <LegalLayout
     title="Cookie Policy"
-    subtitle="How InfinityInnovate Properties uses cookies across our website to help you discover, shortlist and enquire about premium residential and commercial projects across India."
+    subtitle="How InfinityInnovative Properties uses cookies across our website to help you discover, shortlist and enquire about premium residential and commercial projects across India."
   >
     <h2>1. About This Policy</h2>
     <p>
-      This Cookie Policy applies specifically to the InfinityInnovate Properties website
+      This Cookie Policy applies specifically to the InfinityInnovative Properties website
       (<a href="/" className="text-primary hover:underline">infinityinnovative.com</a>) and explains
       how we use cookies and similar technologies when you browse our project listings, request a
       site visit, download a brochure, or submit an enquiry through our contact forms. It should be
@@ -22,7 +22,7 @@ const Cookies = () => (
       projects in Hyderabad, Bengaluru, Pune and other Indian cities.
     </p>
 
-    <h2>3. How InfinityInnovate Properties Uses Cookies</h2>
+    <h2>3. How InfinityInnovative Properties Uses Cookies</h2>
 
     <h3>Remembering Your Enquiry &amp; Contact Details</h3>
     <p>
@@ -36,7 +36,7 @@ const Cookies = () => (
     <p>
       Cookies remember the projects you have viewed, your shortlisted units, preferred city,
       budget range and configuration filters. This allows us to surface the most relevant
-      InfinityInnovate Properties developments on your next visit and reduce the time spent
+      InfinityInnovative Properties developments on your next visit and reduce the time spent
       re-applying filters.
     </p>
 
@@ -100,7 +100,7 @@ const Cookies = () => (
     <p>
       You can accept, reject or clear cookies through your browser settings at any time. Please
       note that disabling functional cookies may affect features such as saved shortlists,
-      pre-filled enquiry forms and personalised project recommendations on the InfinityInnovate
+      pre-filled enquiry forms and personalised project recommendations on the InfinityInnovative
       Properties website.
     </p>
 
@@ -113,7 +113,7 @@ const Cookies = () => (
 
     <h2>8. Contact Us</h2>
     <p>
-      For any questions about how InfinityInnovate Properties uses cookies, please write to{" "}
+      For any questions about how InfinityInnovative Properties uses cookies, please write to{" "}
       <a href="mailto:privacy@infinityinnovative.com" className="text-primary hover:underline">
         privacy@infinityinnovative.com
       </a>{" "}

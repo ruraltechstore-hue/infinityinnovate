@@ -26,7 +26,7 @@ export const WhyChooseUs = () => (
           Why Us
         </motion.p>
         <motion.h2 variants={fadeUp} custom={1} className="text-4xl md:text-5xl font-display font-semibold tracking-tight mb-12 text-foreground">
-          The Infinity Advantage
+          The InfinityInnovative Advantage
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

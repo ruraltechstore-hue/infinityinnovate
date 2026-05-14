@@ -19,12 +19,12 @@ const AGENT = {
   location: "Hyderabad, India",
 };
 
-const emailSubject = encodeURIComponent("Property Inquiry - InfinityInnovativeProperties");
+const emailSubject = encodeURIComponent("Property Inquiry - InfinityInnovative");
 const emailBody = encodeURIComponent(
-  `Hello ${AGENT.name},\n\nI am interested in exploring properties listed on InfinityInnovativeProperties.\n\nPlease assist me with more details.\n\nThank you.`
+  `Hello ${AGENT.name},\n\nI am interested in exploring properties listed on InfinityInnovative.\n\nPlease assist me with more details.\n\nThank you.`
 );
 const whatsappMsg = encodeURIComponent(
-  `Hello ${AGENT.name}, I am interested in properties listed on InfinityInnovativeProperties. Please share more details.`
+  `Hello ${AGENT.name}, I am interested in properties listed on InfinityInnovative. Please share more details.`
 );
 
 const ConsultantCard = () => (

@@ -44,7 +44,7 @@ export const About = () => (
           Homes Built on Trust, <br /> Crafted for India.
         </motion.h2>
         <motion.p variants={fadeUp} custom={3} className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-          InfinityInnovate Properties is a premier Indian real-estate developer creating
+          InfinityInnovative Properties is a premier Indian real-estate developer creating
           thoughtfully designed apartments, villas and commercial spaces. For over a decade,
           we've built our reputation on timely delivery, transparent dealings and lasting
           relationships with the families who call our buildings home.

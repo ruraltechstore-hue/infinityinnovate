@@ -87,7 +87,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Provisioned convenience retail at stilt level",
     ],
     reraNote:
-      "Representative project narrative. Confirm tower-wise approvals and inventory availability with InfinityInnovate sales.",
+      "Representative project narrative. Confirm tower-wise approvals and inventory availability with InfinityInnovative sales.",
   },
   {
     slug: "urban-vista",

@@ -38,7 +38,7 @@ const ProjectsPage = () => (
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1, ease: cubicEase }} className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
           From sky-residences in Hyderabad to gated villa communities in Hitech City, every
-          InfinityInnovate project is built in a prime location with strong appreciation potential —
+          InfinityInnovative project is built in a prime location with strong appreciation potential —
           designed for both end-users and long-term investors.
         </motion.p>
       </div>
@@ -67,7 +67,7 @@ const ProjectsPage = () => (
             How We Build, Why It Matters
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Every Infinity project is shaped by four non-negotiable principles. They guide where we
+            Every InfinityInnovative project is shaped by four non-negotiable principles. They guide where we
             build, how we design and what we deliver — long after the brochure stops being relevant.
           </p>
         </div>
@@ -136,7 +136,7 @@ const ProjectsPage = () => (
           Investment You Can Live In
         </h2>
         <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-          Every Infinity address is hand-picked for its location strength — proximity to tech
+          Every InfinityInnovative address is hand-picked for its location strength — proximity to tech
           corridors, top schools, healthcare and connectivity. Our buyers consistently see strong
           rental yields and long-term capital appreciation, supported by RERA-compliant
           documentation and on-time handovers.

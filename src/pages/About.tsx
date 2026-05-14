@@ -30,7 +30,7 @@ const AboutPage = () => (
           transition={{ duration: 0.6, ease: cubicEase }}
           className="text-primary font-mono text-xs tracking-widest uppercase mb-4"
         >
-          About InfinityInnovate
+          About InfinityInnovative
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ const AboutPage = () => (
           transition={{ duration: 0.7, delay: 0.1, ease: cubicEase }}
           className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
         >
-          For more than a decade, InfinityInnovate Properties has been shaping skylines across
+          For more than a decade, InfinityInnovative Properties has been shaping skylines across
           India — delivering homes, villas and commercial spaces that combine architectural
           excellence, lasting value and the trust of hundreds of families.
         </motion.p>
@@ -63,7 +63,7 @@ const AboutPage = () => (
           transition={{ duration: 0.7, ease: cubicEase }}
           className="rounded-2xl overflow-hidden shadow-xl border border-border"
         >
-          <img src={aboutImg} alt="InfinityInnovate Properties residential community" className="w-full h-full object-cover aspect-[4/5]" loading="lazy" />
+          <img src={aboutImg} alt="InfinityInnovative Properties residential community" className="w-full h-full object-cover aspect-[4/5]" loading="lazy" />
         </motion.div>
         <div>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, ease: cubicEase }} className="text-primary font-mono text-xs tracking-widest uppercase mb-4">
@@ -75,7 +75,7 @@ const AboutPage = () => (
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1, ease: cubicEase }} className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
             <p>
               Founded with a single ambition — to raise the bar for residential development in India —
-              InfinityInnovate Properties has grown into one of Hyderabad's most respected real-estate
+              InfinityInnovative Properties has grown into one of Hyderabad's most respected real-estate
               brands. From boutique gated communities to landmark high-rises, every project is the
               result of careful land selection, considered design and uncompromising construction.
             </p>
@@ -85,7 +85,7 @@ const AboutPage = () => (
               Hitech City, Kukatpally and the emerging western corridor.
             </p>
             <p>
-              What unites them is a single promise: that an Infinity address is a home you can trust,
+              What unites them is a single promise: that an InfinityInnovative address is a home you can trust,
               today and decades from now.
             </p>
           </motion.div>
@@ -119,7 +119,7 @@ const AboutPage = () => (
           <p className="text-muted-foreground leading-relaxed mb-3">
             To be India's most respected real-estate developer — recognised for design innovation,
             sustainable communities and a legacy of long-term relationships with every customer who
-            chooses an Infinity address.
+            chooses an InfinityInnovative address.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Our roadmap takes us beyond Hyderabad — into India's next-generation growth cities,
@@ -138,7 +138,7 @@ const AboutPage = () => (
         </h2>
         <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
           Trust isn't claimed — it's built. Through every brick laid, every milestone met and every
-          promise kept, InfinityInnovate has become the developer of choice for discerning Indian
+          promise kept, InfinityInnovative has become the developer of choice for discerning Indian
           homebuyers and investors.
         </p>
       </div>
@@ -172,7 +172,7 @@ const AboutPage = () => (
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Every Infinity project follows a strict construction protocol — from RCC mix design and
+              Every InfinityInnovative project follows a strict construction protocol — from RCC mix design and
               MIVAN shuttering to seismic-zone compliant structural detailing. Materials are sourced
               from leading Indian and international brands and are subject to incoming-quality checks
               before being released to site.
